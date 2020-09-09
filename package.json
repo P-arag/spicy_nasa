@@ -1,0 +1,19 @@
+{
+  "name": "nasa_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "node-fetch": "^2.6.0",
+    "telegraf": "^3.38.0",
+    "random": "^2.2.0",
+    "micro-bot": "^2.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Parag Jyoti Pal",
+  "license": "ISC"
+}
