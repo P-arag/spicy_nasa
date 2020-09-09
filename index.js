@@ -5,12 +5,12 @@ let apodUrl =
 let roverUrl =
   "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=KYHiC6OaqSTMJjQPuywA6CtbWKjQt7JzYiGDZX5m";
 const { default: Telegraf, Context } = require("telegraf");
-// const { Composer } = require("micro-bot");
+
 const axios = require("axios");
-//const fetch = require("node-fetch");
+
 const random = require("random");
-const bot = new Telegraf("1193291890:AAHF__1Z9kH5LDi1yIsoQ1dqqNN20HaC-i8");
-// const bot = new Composer();
+const bot = new Telegraf("BOT_TOKEN");
+
 console.log("Everything W0rks!!!");
 bot.start((ctx) => {
   ctx.reply(`Hi I am your Nasa Data Fetching Bot!!
@@ -115,8 +115,6 @@ async function getGeo() {
 }
 
 // No touching
-// server id polar-stream-03685
-// server url https://polar-stream-03685.herokuapp.com/ | https://git.heroku.com/polar-stream-03685.git
-// heroku config:set --app polar-stream-03685 BOT_DOMAIN='https://polar-stream-03685.herokuapp.com'
+
  bot.launch();
-// module.exports = bot;
+
